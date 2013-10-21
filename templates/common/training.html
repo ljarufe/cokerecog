@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div id="cuerpo">
+	    <h2>Entrenamiento de la red neuronal</h2>
+	    <form action="" method="post" enctype="multipart/form-data">
+	    	<table>
+            	{{ form.as_table }}
+            	<tr>
+            		<th></th>
+            		<td>
+            			<input id="training" type="submit" value="Entrenar">
+            		</td>
+            	</tr>
+            </table>
+        </form>
+        {% if output %}
+        <div id="output">
+            <h3>Resultado del entrenamiento</h3>
+            <ul>
+                {{ output|safe }}
+            </ul>
+            <img src="{{ MEDIA_URL }}img/mse.png" />
+            <div>
+                <h4>Red almacenada en disco</h4>
+                <a href="{{ MEDIA_URL }}nn/neuralne=op.txt">Archivo con la red</a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}

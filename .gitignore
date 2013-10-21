@@ -1,0 +1,10 @@
+*.pyc
+*.db
+:memory
+*~
+
+public/*
+!public/media/
+public/media/*
+
+.idea/*

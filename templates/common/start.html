@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div id="opciones">
+        <h2>Opciones</h2>
+        <ul>
+            <li><a href="{% url samples %}">Preparar muestras</a></li>
+            <li><a href="{% url topology %}">Optimizar topología de la red neuronal</a></li>
+            <li><a href="{% url training %}">Entrenar la red neuronal</a></li>
+            <li><a href="{% url simulation %}">Reconocer muestra</a></li>
+        </ul>
+    </div>
+{% endblock %}

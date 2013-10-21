@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Reconocimiento de cocaína</title>
+		
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/css_base.css" media="screen" />
+		<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-1.4.2.min.js"></script>
+			<script type="text/javascript" src="{{ MEDIA_URL }}js/base.js"></script>
+		
+		{% block head %}{% endblock %}		
+	</head>
+	<body>
+	    <div id="container">
+		    <div id="titulo">
+			    <h1>Reconocimiento de cocaína en orina</h1>
+		    </div>
+        	{% block body %}{% endblock %}
+        	<div id="inicio">
+        	    <a href="{% url start %}">Regresar al inicio</a>
+        	<div>
+        </div>
+	</body>
+</html>

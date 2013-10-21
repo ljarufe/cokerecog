@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* Estilos Generales */
+	body{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+		background: #fff;
+		width: 90%;
+		margin: 50px 0px 0px 50px;
+	}
+	
+    #titulo{
+        background-color: #85ade6;    
+    }
+    
+        #titulo h1{
+            padding: 10px;
+            color: #e6f0fb;
+        }
+	        
+    ul{
+        list-style-type: disc;
+    }
+    
+        ul li{
+            margin-bottom: 10px;
+        }
+        
+    #inicio {
+        text-align: right;
+        margin-right: 50px;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+        
+    a:link { 
+        color: #3f5681;
+        text-decoration: none
+    }
+    a:visited { 
+        color: #3f5681;
+        text-decoration: none
+    }
+    a:hover { 
+        text-decoration: overline; 
+    }
+    a:focus { 
+        background-color: yellow; 
+    }
+    a:active { 
+        color: red; 
+    }
+
